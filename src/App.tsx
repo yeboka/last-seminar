@@ -20,7 +20,6 @@ enum Color {
 
 function App() {
   const [count, setCount] = useState<number>(0)
-  const [state, setState] = useState<locale>("ru")
   const [todo, setTodo] = useState<Todo[] | null>()
 
   useEffect(() => {
@@ -49,7 +48,7 @@ function App() {
   function increaseCount (count: number): void {
     setCount(count + 1)
   }
-  
+
   return (
     <>
       <div>
